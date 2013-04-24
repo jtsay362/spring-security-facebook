@@ -1,0 +1,84 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+	  <groupId>com.ngweb</groupId>
+	  <artifactId>scala-parent</artifactId>
+	  <version>0.0.3-SNAPSHOT</version>  
+  </parent>
+  
+  <groupId>com.ngweb.web.springsecurity</groupId>
+  <artifactId>spring-security-facebook</artifactId>
+  <version>1.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>spring-security-facebook</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <httpcomponents.client.version>4.2.3</httpcomponents.client.version>
+    <ngweb.commons.version>1.0-SNAPSHOT</ngweb.commons.version>
+  </properties>
+
+  <dependencies>    
+    <dependency>
+      <groupId>commons-lang</groupId>
+      <artifactId>commons-lang</artifactId>
+      <version>${commons.lang.version}</version>
+    </dependency>
+    
+    <dependency>
+      <groupId>commons-codec</groupId>
+      <artifactId>commons-codec</artifactId>
+      <version>${commons.codec.version}</version>
+    </dependency>
+    
+    <dependency>
+      <groupId>net.sf.json-lib</groupId>
+      <artifactId>json-lib</artifactId>
+      <version>${json.lib.version}</version>
+      <classifier>jdk15</classifier>
+    </dependency>    
+    
+    <dependency>
+      <groupId>org.apache.httpcomponents</groupId>
+      <artifactId>httpclient</artifactId>
+      <version>${httpcomponents.client.version}</version>
+    </dependency>        
+    
+    <dependency>
+      <groupId>org.springframework.security</groupId>
+      <artifactId>spring-security-core</artifactId>
+      <version>${spring.security.version}</version>
+    </dependency>
+    
+    <dependency>
+      <groupId>org.springframework.security</groupId>
+      <artifactId>spring-security-web</artifactId>
+      <version>${spring.security.version}</version>
+    </dependency>            
+    
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>servlet-api</artifactId>
+      <version>${servlet.api.version}</version>
+      <scope>provided</scope>
+    </dependency>
+    
+    <dependency>      
+      <groupId>com.ngweb</groupId>
+      <artifactId>ngweb-commons</artifactId>
+      <version>${ngweb.commons.version}</version>
+    </dependency>    
+  </dependencies>
+  
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>net.alchim31.maven</groupId>
+        <artifactId>scala-maven-plugin</artifactId>
+      </plugin>
+    </plugins>
+  </build>  
+</project>

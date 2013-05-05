@@ -16,11 +16,6 @@
   <name>spring-security-facebook</name>
   <url>http://maven.apache.org</url>
 
-  <properties>
-    <httpcomponents.client.version>4.2.3</httpcomponents.client.version>
-    <ngweb.commons.version>1.0-SNAPSHOT</ngweb.commons.version>
-  </properties>
-
   <dependencies>    
     <dependency>
       <groupId>commons-lang</groupId>
@@ -33,6 +28,12 @@
       <artifactId>commons-codec</artifactId>
       <version>${commons.codec.version}</version>
     </dependency>
+    
+    <dependency>
+      <groupId>com.google.guava</groupId>
+      <artifactId>guava</artifactId>
+      <version>${guava.version}</version>
+    </dependency>    
     
     <dependency>
       <groupId>net.sf.json-lib</groupId>
@@ -65,12 +66,6 @@
       <version>${servlet.api.version}</version>
       <scope>provided</scope>
     </dependency>
-    
-    <dependency>      
-      <groupId>com.ngweb</groupId>
-      <artifactId>ngweb-commons</artifactId>
-      <version>${ngweb.commons.version}</version>
-    </dependency>    
   </dependencies>
   
   <build>
